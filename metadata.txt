@@ -1,0 +1,38 @@
+==================================================
+user_study_data.csv metadata
+==================================================
+1. location: Participant's country: {'india', 'mexico', 'usa'}
+2. participant_id: Participant's Unique ID
+3. region_grew_up: Region participant grew up in: {'both', 'rural', 'urban'}
+4. highest_education: Participant's education level: {'community_college', 'graduate', 'high_school', 'secondary', 'undergraduate'}
+5. current_age: Participant's age: {'18_to_25', '25_to_40', '40_to_60', 'more_than_60'}
+6. reading_habits: Participant's reading habit: {'avid', 'light', 'moderate', 'occasional'}
+7. preferred_genre: Participant's genre preference: {'both_genres', 'fiction', 'non_fiction'}
+8. example_id: unique review id
+9. book_title: Name of book
+10. book_authors: Book author names
+11. book_country: Book country of origin
+12. book_genre: Genre of book
+13. review_text: Goodreads review text
+14. has_read_author: Has the participant read books by the author? {'no', 'yes'}
+15. has_read_book: Has the participant read the book for which the review is posted? {'no', 'yes'}
+16. choose_genre_impact: Influence of participant's genre preference on understanding the review: {'genre_influence_cant', 'genre_influence_moderate', 'genre_influence_no', 'genre_influence_slight', 'genre_influence_strong'}
+17. choose_demo_impact: Influence of participant's demography on understanding the review: {'demographic_influence_cant', 'demographic_influence_moderate', 'demographic_influence_no', 'demographic_influence_slight', 'demographic_influence_strong'}
+18. familiarity_grp: Participant's familiarity with the contents of the review text: {'familiar', 'not familiar', 'very familiar'}
+19. understand_grp: Participant's understanding of the contents of the review text: {'not understood', 'understood', 'well understood'}
+20. can_similar_demo_genre_write: Can a person from the participant's background write the review? {'similar_demo_genre_yes', 'similar_demo_genre_maybe', 'similar_demo_genre_no', 'similar_demo_genre_cant'}
+21. span: Participant highlighted difficult to understand span
+22. span_type: GPT-4o annotated type of span
+==================================================
+gpt_4o_responses.csv metadata
+==================================================
+1. key: Unique key formatted as {example_id}+self:{location}+{preferred_genre}. Example: 111489+self:USA+fiction
+2. review_text: Goodreads review text
+3. CSI: GPT-4o highlighted difficult to understand span
+4. category: Category of CSI: {Linguistic, Material, Social, Ecology, Customs, Other}
+5. familiarity: CSI familiarity level: {Somewhat familiar, Unfamiliar, Familiar, Ambiguous}
+6. impact: CSI's impact on understandability: {Low, Medium, High}
+7. reason: Reason for marking as CSI
+8. explanation: Explanation of the CSI
+9. reformulation: Reformulated review text to make it more understandable
+==================================================
